@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { CodeBlock as ReactCodeBlock } from "react-code-blocks";
+import { BiDownArrowAlt } from "react-icons/bi";
 
 // https://colorhunt.co/palette/253094
 
@@ -78,5 +79,28 @@ export const CTAButton = styled.button`
     height: 60px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: #F10086;
+    background-color: black;
+`
+
+export const BlockWrapper = styled.div`
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top: 33%;
+`
+
+export const BlockContent = styled.div`
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+    background: rgb(105,48,195);
+    background: linear-gradient(90deg, rgba(105,48,195,1) 50%, rgba(128,255,219,1) 50%);
+    text-align: center;
+`
+
+export const Picture = styled.img`
+    width: 200px;
+`
+
+export const DownArrow = styled(BiDownArrowAlt)`
 `

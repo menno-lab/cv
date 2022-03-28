@@ -4,14 +4,14 @@ import { monokaiSublime } from "react-code-blocks";
 
 const LeftPanel = () => {
 
-    const text = `
+    const code = `
         const mennoJager = {
             firstName: "Menno",
             lastName: "Jager",
             contact: "menno.c.jager@gmail.com",
             dob: 799081200,
             location: "Helsinki, FI"
-        }
+        };
     `
 
 
@@ -22,7 +22,7 @@ const LeftPanel = () => {
         <CodeBlockWrapper>
             <CodeBlock
                 language={language}
-                text={text}
+                text={code}
                 showLineNumbers={false}
                 theme={monokaiSublime}
             />

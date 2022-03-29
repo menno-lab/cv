@@ -20,7 +20,6 @@ export const LogoWrapper = styled.div`
 
 export const TextWrapper = styled.div``
 
-
 export const TextpandaLogo = styled.img`
     height: 120px;
     position: absolute;
@@ -30,7 +29,6 @@ export const TextpandaLogo = styled.img`
     right: 0;
     bottom: 0;
 `
-
 
 export const TextpandaText = styled.div`
     text-align: justify;

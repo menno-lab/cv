@@ -21,10 +21,9 @@ const ExperienceCard = (props: { company: string; logo: any; dateRange: string; 
                     })
                 }
             </JobList>
-        </JobWrapper>
-        
+        </JobWrapper>        
         </>
-  )
+    )
 };
 
 export default ExperienceCard

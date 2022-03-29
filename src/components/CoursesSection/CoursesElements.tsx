@@ -8,6 +8,8 @@ export const CoursesGrid = styled.div`
     grid-row-gap: 20px;
     max-width: 1500px;
     margin: auto;
+    place-items: center;
+    padding: 30px 20px;
     @media screen and (max-width: 1365px) {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -24,11 +26,15 @@ export const CourseCard = styled.div`
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     background-color: white;
-    width: 300px;
+    width: 250px;
     height: 100px;
+    text-align: center;
 `
 
-export const CourseTitle = styled.h3``
-export const CourseProvider = styled.p``
+export const CourseTitle = styled.h3`
+    font-size: 16px;
+`
 
-
+export const CourseProvider = styled.p`
+    font-size: 14px;
+`

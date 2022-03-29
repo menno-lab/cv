@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const ColorWrapper = styled.div`
+    background-color: #80FFDB;
+    padding: 30px 0;
+`
+
 export const TextpandaGrid = styled.div`
     display: grid;
     grid-template-columns: 0.2fr 0.8fr;
@@ -17,7 +22,7 @@ export const TextWrapper = styled.div``
 
 
 export const TextpandaLogo = styled.img`
-    height: 180px;
+    height: 120px;
     position: absolute;
     margin: auto;
     top: 0;

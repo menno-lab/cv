@@ -12,6 +12,7 @@ const Home = () => {
     <Skills />
     <Courses />
     <TextpandaSection />
+    <ExperienceSection />
     </>
   )
 }

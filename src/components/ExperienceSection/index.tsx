@@ -1,93 +1,79 @@
+import { SectionTitle } from '../Common';
+import ExperienceCard from './ExperienceCard';
 import {
-    ExperienceWrapper,
-    SMBody,
-    SMLogoWrapper,
-    LIBody,
-    LILogoWrapper,
-    GBody,
-    GLogoWrapper,
-    CompanyLogo,
-    CompanyName,
-    DateRange,
-    JobTitle,
-    JobList,
-    MultipleJobsWrapper,
-    Job,
-    ExperienceTitle
+    ExperienceWrapper
 } from './ExperienceElements'
 
 const Experience = () => {
 
-    const supermetrics = require('../images/experience/sm.png');
-    const linkedin = require('../images/experience/li.png');
-    const google = require('../images/experience/google.png');
+    const experiences = [
+        {
+            company: 'Supermetrics',
+            logo: require('../images/experience/sm.png'),
+            dateRange: 'Nov 2020 - Present',
+            jobTitle: 'Technical Support Specialist',
+            activities: [
+                'Technical support for Supermetrics users',
+                'Debugging complex data issues',
+                'Collaborating with the product managers for bugs/new features',
+                'Holding training sessions with customers or other teams'
+            ]
+        },
+        {
+            company: 'LinkedIn',
+            logo: require('../images/experience/li.png'),
+            dateRange: 'Aug 2019 - Nov 2020',
+            jobTitle: 'Marketing Solutions Consultant',
+            activities: [
+                'Analyzing data from marketing campaignperformance and converting them to actionable recommendations',
+                'Consulting advertisers to be successful in their marketing goals',
+                'Onboarding new advertisers',
+                'Providing technical support to the sales teams',
+                'Analyzing and reporting feedback from advertisers to the product developers'
+            ]
+        },
+        {
+            company: 'Google (via Accenture)',
+            logo: require('../images/experience/google.png'),
+            dateRange: 'Dec 2018 - Aug 2019',
+            jobTitle: 'Workflow Lead',
+            activities: [
+                'Performance Data Analysis and Reporting',
+                'Process and Operations optimisation',
+                'Coordinating operations across multiple channels and locations'
+            ]
+        },
+        {
+            company: 'Google (via Accenture)',
+            logo: require('../images/experience/google.png'),
+            dateRange: 'Sep 2018 - Dec 2018',
+            jobTitle: 'Advertising Specialist (enterprise)',
+            activities: [
+                'Marketing support specialist for Googles toptier advertising clients',
+                'Technical support for Analytics and Tag Manager',
+                'Analyzing data from campaign performance and converting them into actionable recommendations'
+            ]
+        },
+        {
+            company: 'Google (via Accenture)',
+            logo: require('../images/experience/google.png'),
+            dateRange: 'Jun 2018 - Sep 2018',
+            jobTitle: 'Advertising Specialist',
+            activities: [
+                'Online support specialist for Googles SMB advertisers',
+                'Technical support for Analytics and Tag Manager',
+                'Campaign optimisation and upselling'
+            ]
+        }
+    ];
 
     return (
         <>
-        <ExperienceTitle>Experience</ExperienceTitle>
+        <SectionTitle>Experience</SectionTitle>
         <ExperienceWrapper>
-
-            <SMBody>
-                <CompanyName>Supermetrics</CompanyName>
-                <DateRange>Nov 2020 - Present</DateRange>
-                <JobTitle>Technical Support Specialist</JobTitle>
-                <JobList>
-                    <li>Technical support for Supermetrics users</li>
-                    <li>Debugging complex data issues</li>
-                    <li>Collaborating with the product managers forbugs/new features</li>
-                    <li>Holding training sessions with customers orother teams</li>
-                </JobList>
-            </SMBody>
-            <SMLogoWrapper>
-                <CompanyLogo src={supermetrics} alt='Supermetrics' />
-            </SMLogoWrapper>
-
-            <LILogoWrapper>
-                <CompanyLogo src={linkedin} alt='LinkedIn' />
-            </LILogoWrapper>
-            <LIBody>
-                <CompanyName>LinkedIn</CompanyName>
-                <DateRange>Aug 2019 - Nov 2020</DateRange>
-                <JobTitle>Marketing Solutions Consultant</JobTitle>
-                <JobList>
-                    <li>Analyzing data from marketing campaignperformance and converting them toactionable recommendations</li>
-                    <li>Consulting advertisers to be successful intheir marketing goals</li>
-                    <li>Onboarding new advertisers</li>
-                    <li>Providing technical support to the salesteams</li>
-                    <li>Analyzing and reporting feedback fromadvertisers to the product developers</li>
-                </JobList>
-            </LIBody>                       
-            <GLogoWrapper>
-                <CompanyLogo src={google} alt='Google' />
-            </GLogoWrapper>
-            <GBody>
-            <CompanyName>Google <span style={{fontWeight: 'normal', fontSize: 14}} >(via Accenture)</span></CompanyName>
-                <MultipleJobsWrapper>
-                    <Job>
-                        <DateRange>Dec 2018 - Aug 2019</DateRange>
-                        <JobTitle>Workflow Lead</JobTitle>
-                        <JobList>
-                            <li>Analyzing data from marketing campaignperformance and converting them toactionable recommendations</li>
-                            <li>Consulting advertisers to be successful intheir marketing goals</li>
-                            <li>Onboarding new advertisers</li>
-                            <li>Providing technical support to the salesteams</li>
-                            <li>Analyzing and reporting feedback fromadvertisers to the product developers</li>
-                        </JobList>
-                    </Job>
-                    <Job>
-                        <DateRange>Sep 2018 - Dec 2018</DateRange>
-                        <JobTitle>Advertising Specialist</JobTitle>
-                        <JobList>
-                            <li>Analyzing data from marketing campaignperformance and converting them toactionable recommendations</li>
-                            <li>Consulting advertisers to be successful intheir marketing goals</li>
-                            <li>Onboarding new advertisers</li>
-                            <li>Providing technical support to the salesteams</li>
-                            <li>Analyzing and reporting feedback fromadvertisers to the product developers</li>
-                        </JobList>
-                    </Job>
-                </MultipleJobsWrapper>
-
-            </GBody>
+            {experiences.map(job => (
+                <ExperienceCard key={job.dateRange} company={job.company} logo={job.logo} dateRange={job.dateRange} jobTitle={job.jobTitle} activities={job.activities} />
+            ))}
         </ExperienceWrapper>
         </>
   )

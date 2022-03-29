@@ -2,18 +2,18 @@ import {
     SkillsSection,
     SkillsWrapper,
     SkillItem,
-    SkillsTitle,
     SkillWrapper,
     WebSkillsItems
 } from './SkillsElements';
 import { images } from '../images/skills';
+import { SectionTitle } from '../Common';
 
 const Skills = () => {
 
     return (
         <SkillsSection>
             <SkillsWrapper>
-                <SkillsTitle>Skills</SkillsTitle>
+                <SectionTitle>Skills</SectionTitle>
                 <WebSkillsItems>
                 <SkillWrapper title='React' ><SkillItem src={images.react} alt='React' /></SkillWrapper>
                     <SkillWrapper title='TypeScript' ><SkillItem src={images.typescript} alt='TypeScript' /></SkillWrapper>

@@ -1,20 +1,12 @@
 import styled from 'styled-components';
 
-export const SkillsSection = styled.div`
-
-`
-
-export const SkillsTitle = styled.h3`
-    text-align: center;
-    font-size: 2rem;
-`
+export const SkillsSection = styled.div``
 
 export const SkillsWrapper = styled.div`
     max-width: 1200px;
     margin: auto;
     padding: 40px;
 `
-
 
 export const WebSkillsTitle = styled.div`
     display: grid;
@@ -23,7 +15,6 @@ export const WebSkillsTitle = styled.div`
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 `
-
 
 export const WebSkillsItems = styled.div`
     display: grid;
@@ -34,9 +25,7 @@ export const WebSkillsItems = styled.div`
     justify-items: center;
 `
 
-export const WebSkillsWrapper = styled.div`
-
-`
+export const WebSkillsWrapper = styled.div``
 
 export const AdsSkillsWrapper = styled.div`
 `

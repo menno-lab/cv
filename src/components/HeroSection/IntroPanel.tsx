@@ -13,7 +13,7 @@ const RightPanel = () => {
             <Title>Hi, I'm Menno</Title>
         </TitleWrapper>
         <SubTitleWrapper>
-            <SubTitle>I like to build web applications</SubTitle>
+            <SubTitle>I build web applications</SubTitle>
         </SubTitleWrapper>        
     </LeftPanelWrapper>
   )

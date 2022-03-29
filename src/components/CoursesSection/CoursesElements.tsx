@@ -7,6 +7,9 @@ export const CoursesWrapper = styled.div`
     h2 {
         color: #e6db74;
     }
+    @media screen and (max-width: 466px) {
+        padding: 5px;
+    }
 `
 
 export const CoursesGrid = styled.div`
@@ -26,6 +29,7 @@ export const CoursesGrid = styled.div`
     @media screen and (max-width: 1036px) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
+        padding: 0px;
     }
 `
 
@@ -37,6 +41,10 @@ export const CourseCard = styled.div`
     width: 150px;
     height: 100px;
     text-align: center;
+    @media screen and (max-width: 466px) {
+        padding: 5px;
+        padding-bottom: 20px;
+    }
 `
 
 export const CourseTitle = styled.h3`

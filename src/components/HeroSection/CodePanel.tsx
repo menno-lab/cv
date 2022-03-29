@@ -26,6 +26,7 @@ const LeftPanel = () => {
                     text={code}
                     showLineNumbers={false}
                     theme={monokaiSublime}
+                   
                 />
             </CodeBlockWrapper>
         </CodePanelWrapper>

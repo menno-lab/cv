@@ -48,10 +48,14 @@ export const CodeBlockWrapper = styled.div`
     right: 0;
     top: 25%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    @media screen and (max-width: 400px) {
+        width: 340px;
+    }
 `
 
 export const CodeBlock = styled(ReactCodeBlock)`
     height: 500px!important;
+    padding: 20px;
 `
 
 export const TitleWrapper = styled.div`

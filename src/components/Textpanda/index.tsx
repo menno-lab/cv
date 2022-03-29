@@ -4,8 +4,8 @@ import { ColorWrapper, LogoWrapper, TextpandaGrid, TextpandaLogo, TextpandaText,
 const TextpandaSection = () => {
     const tpLogo = require('../images/main.png');
     return (
-        <SectionWrapper>
-            <ColorWrapper>
+        <ColorWrapper>
+            <SectionWrapper>        
                 <SectionTitle>Project: Textpanda</SectionTitle>
                 <TextpandaGrid>
                     <LogoWrapper>
@@ -33,9 +33,9 @@ const TextpandaSection = () => {
                             </ul>
                         </TextpandaText>
                     </TextWrapper>
-                </TextpandaGrid>
-            </ColorWrapper>
-        </SectionWrapper>
+                </TextpandaGrid>            
+            </SectionWrapper>
+        </ColorWrapper>
     )
 }
 

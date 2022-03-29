@@ -15,8 +15,10 @@ export const EducationWrapper = styled.div`
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    place-items: center;
     padding: 20px 0;
+    max-width: 1200px;
+    margin: auto;
+    place-items: center;
     @media screen and (max-width: 700px) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);

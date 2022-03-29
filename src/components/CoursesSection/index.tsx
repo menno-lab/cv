@@ -48,7 +48,6 @@ const Courses = () => {
         }
     ];
 
-
   return (
     <div>
         <SectionTitle>Courses</SectionTitle>

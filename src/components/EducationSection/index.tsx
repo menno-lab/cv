@@ -1,7 +1,6 @@
-import React from 'react'
 import { SectionTitle } from '../Common';
 import EducationCard from './EducationCard';
-import { EducationWrapper } from './EducationElements';
+import { EducationColorWrapper, EducationWrapper } from './EducationElements';
 
 const EducationSection = () => {
 
@@ -22,14 +21,14 @@ const EducationSection = () => {
 
 
     return (
-        <>
+        <EducationColorWrapper>
         <SectionTitle>Education</SectionTitle>
         <EducationWrapper>
             {educations.map(course => (
                 <EducationCard key={course.dateRange} university={course.university} course={course.course} dateRange={course.dateRange} location={course.location} />
             ))}
         </EducationWrapper>
-        </>
+        </EducationColorWrapper>
     )
 }
 

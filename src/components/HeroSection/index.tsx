@@ -1,25 +1,23 @@
-import { HeroWrapper, CTAWrapper, CTAButton, BlockWrapper, BlockContent, DownArrow } from './HeroElements';
-import RightPanel from './IntroPanel';
-import LeftPanel from './CodePanel';
-
+import { HeroSectionWrapper, HeroWrapper, CTAWrapper, CTAButton, BlockWrapper, BlockContent } from './HeroElements';
+import IntroPanel from './IntroPanel';
+import CodePanel from './CodePanel';
 
 const HeroSection = () => {
 
   return (
-    <>
-    <HeroWrapper>
-        <RightPanel />
-        <LeftPanel />
-    </HeroWrapper>
-    <BlockWrapper>
-        <BlockContent>
-            
-        </BlockContent>
-    </BlockWrapper>
-    <CTAWrapper>
-        <CTAButton>Welcome to my CV! <DownArrow /></CTAButton>
-    </CTAWrapper>
-    </>
+    <HeroSectionWrapper>
+      <HeroWrapper>
+          <IntroPanel />
+          <CodePanel />
+      </HeroWrapper>
+      <BlockWrapper>
+          <BlockContent>            
+          </BlockContent>
+      </BlockWrapper>
+      <CTAWrapper>
+          <CTAButton>Welcome to my CV!</CTAButton>
+      </CTAWrapper>
+    </HeroSectionWrapper>
   )
 }
 

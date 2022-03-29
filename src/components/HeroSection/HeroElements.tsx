@@ -4,10 +4,18 @@ import { BiDownArrowAlt } from "react-icons/bi";
 
 // https://colorhunt.co/palette/253094
 
+export const HeroSectionWrapper = styled.div`
+    box-shadow: 0 10px 12px -5px gray;
+`
+
 export const HeroWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    @media screen and (max-width: 1030px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
 `
 
 export const LeftPanelWrapper = styled.div`
@@ -19,6 +27,10 @@ export const LeftPanelWrapper = styled.div`
     grid-template-rows: repeat(2, 1fr);
     padding-left: 50px;
     color: #23241f;
+    @media screen and (max-width: 1030px) {
+        padding: 0;
+        height: 100vh;
+    }
 `
 
 export const CodePanelWrapper = styled.div`
@@ -53,6 +65,7 @@ export const Title = styled.h1`
     width: 100%;
     bottom: 0;
     left: 0;
+    color: #23241f;
 `
 
 export const SubTitleWrapper = styled.div`
@@ -67,6 +80,9 @@ export const CTAWrapper = styled.div`
     position: absolute;
     bottom: 15vh;
     text-align: center;
+    @media screen and (max-width: 1030px) {
+        display: none;
+    }
 `
 
 export const CTAButton = styled.button`
@@ -79,7 +95,8 @@ export const CTAButton = styled.button`
     height: 60px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: black;
+    background-color: #23241f;
+
 `
 
 export const BlockWrapper = styled.div`
@@ -87,6 +104,9 @@ export const BlockWrapper = styled.div`
     height: 100px;
     position: absolute;
     top: 33%;
+    @media screen and (max-width: 1400px) {
+        display: none;
+    }
 `
 
 export const BlockContent = styled.div`
@@ -103,4 +123,8 @@ export const Picture = styled.img`
 `
 
 export const DownArrow = styled(BiDownArrowAlt)`
+    font-size: 40px;
+    @media screen and (min-width: 1030px) {
+        display: none;
+    }
 `

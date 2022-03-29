@@ -11,6 +11,12 @@ export const JobWrapper = styled.div`
     grid-template-rows: 20px 20px 20px 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 10px;
+    @media screen and (max-width: 980px) {
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 10px 10px 10px 1fr;
+        grid-row-gap: 0px;
+    }
 `
 
 export const LogoWrapper = styled.div`
@@ -46,6 +52,11 @@ export const JobList = styled.ul`
     font-size: 14px;
     li:not(:last-child) { 
         margin-bottom: 5px;  
+    }
+    @media screen and (max-width: 980px) {
+        list-style-type: none;
+        padding-left: 0;
+        padding: 0 20px;
     }
 `
 

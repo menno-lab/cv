@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+export const CoursesWrapper = styled.div`
+    background-color: #23241f;
+    padding: 40px;
+    margin-top: 40px;
+    h2 {
+        color: #e6db74;
+    }
+`
+
 export const CoursesGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -13,7 +22,6 @@ export const CoursesGrid = styled.div`
     @media screen and (max-width: 1365px) {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        place-items: center;
     }
     @media screen and (max-width: 1036px) {
         grid-template-columns: repeat(2, 1fr);
@@ -26,7 +34,7 @@ export const CourseCard = styled.div`
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     background-color: white;
-    width: 250px;
+    width: 150px;
     height: 100px;
     text-align: center;
 `

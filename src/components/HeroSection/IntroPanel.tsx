@@ -1,4 +1,5 @@
 import {
+  DownArrow,
     LeftPanelWrapper,
     SubTitle,
     SubTitleWrapper,
@@ -14,7 +15,8 @@ const RightPanel = () => {
         </TitleWrapper>
         <SubTitleWrapper>
             <SubTitle>I build web applications</SubTitle>
-        </SubTitleWrapper>        
+            <DownArrow />
+        </SubTitleWrapper>  
     </LeftPanelWrapper>
   )
 }

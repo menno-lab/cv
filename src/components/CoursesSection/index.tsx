@@ -1,7 +1,6 @@
-import React from 'react'
 import { SectionTitle } from '../Common';
-import Course from './Course'
-import { CoursesGrid } from './CoursesElements';
+import Course from './Course';
+import { CoursesWrapper, CoursesGrid } from './CoursesElements';
 
 const Courses = () => {
 
@@ -49,14 +48,14 @@ const Courses = () => {
     ];
 
   return (
-    <div>
+    <CoursesWrapper>
         <SectionTitle>Courses</SectionTitle>
         <CoursesGrid>
             {courses.map(course => (
                 <Course key={course.name} name={course.name} provider={course.provider} date={course.date} />
             ))}
         </CoursesGrid>
-    </div>
+    </CoursesWrapper>
   )
 }
 

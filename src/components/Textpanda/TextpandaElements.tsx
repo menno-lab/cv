@@ -12,10 +12,17 @@ export const TextpandaGrid = styled.div`
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     padding: 0 40px;
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 200px;
+    }
 `
 
 export const LogoWrapper = styled.div`
     position: relative;
+    @media screen and (max-width: 900px) {
+        grid-area: 2 / 1 / 3 / 2;
+    }
 `
 
 export const TextWrapper = styled.div``

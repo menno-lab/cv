@@ -1,11 +1,12 @@
 import { JobWrapper, CompanyLogo, CompanyName, DateRange, JobList, JobTitle, LogoWrapper, Line } from './ExperienceElements';
 
-const ExperienceCard = (props:any) => {
+const ExperienceCard = (props: { company: string; logo: any; dateRange: string; jobTitle: string; activities: string[]; }) => {
     
     const { company, logo, dateRange, jobTitle, activities } = props;
 
     return (
         <>
+        <Line />
         <JobWrapper>
             <LogoWrapper>
                 <CompanyLogo src={logo} />
@@ -21,7 +22,7 @@ const ExperienceCard = (props:any) => {
                 }
             </JobList>
         </JobWrapper>
-        <Line />
+        
         </>
   )
 };

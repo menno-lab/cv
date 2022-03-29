@@ -8,7 +8,10 @@ const LeftPanel = () => {
         const mennoJager = {
             firstName: "Menno",
             lastName: "Jager",
-            contact: "menno.c.jager@gmail.com",
+            contact: {
+                email: "menno.c.jager@gmail.com",
+                phone: "+358 45327 1550"
+            }
             dob: 799081200,
             location: "Helsinki, FI"
         };

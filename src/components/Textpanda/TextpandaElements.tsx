@@ -33,6 +33,7 @@ export const TextpandaLogo = styled.img`
 
 
 export const TextpandaText = styled.div`
+    text-align: justify;
     ul {
         list-style-type: square;
     }

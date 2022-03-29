@@ -5,7 +5,7 @@ export const EducationColorWrapper = styled.div`
     padding: 30px 0;
     margin-top: 50px;
     h2 {
-        color: #8744f1;
+        color: white;
     }
 `
 
